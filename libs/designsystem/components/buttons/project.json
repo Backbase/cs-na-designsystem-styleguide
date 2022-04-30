@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/designsystem/components/buttons",
+  "sourceRoot": "libs/designsystem/components/buttons/src",
+  "prefix": "bb",
+  "targets": {
+    "test": {
+      "executor": "@angular-devkit/build-angular:karma",
+      "options": {
+        "main": "libs/designsystem/components/buttons/src/test.ts",
+        "tsConfig": "libs/designsystem/components/buttons/tsconfig.spec.json",
+        "karmaConfig": "libs/designsystem/components/buttons/karma.conf.js"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/designsystem/components/buttons/src/**/*.ts",
+          "libs/designsystem/components/buttons/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

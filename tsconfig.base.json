@@ -17,6 +17,7 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "paths": {
+      "@backbase/designsystem/components/buttons": ["libs/designsystem/components/buttons/src/index.ts"],
       "@backbase/designsystem/styleguide": ["libs/designsystem/styleguide/src/index.ts"],
       "@backbase/retail/data-access-mocks": ["libs/retail/data-access-mocks/src/index.ts"],
       "@backbase/retail/feature/communication": ["libs/retail/feature/communication/src/index.ts"],
