@@ -1,7 +1,7 @@
 <div class="row mt-4">
   <div class="col-2 d-flex flex-column scrollable">
     <a *ngFor="let route of routes; index as i" [routerLink]="route" role="link" [class.mt-4]="i !== 0">{{
-      route | replace : '-' : ' ' | titlecase
+      route | replace: '-':' ' | titlecase
     }}</a>
   </div>
   <div class="col-10 scrollable">

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Route } from "@angular/router";
+import { ActivatedRoute, Route } from '@angular/router';
 
 @Component({
   selector: 'bb-styleguide',
@@ -12,7 +12,9 @@ export class StyleguideComponent implements OnInit {
     .map((route: Route) => route.path)
     .sort() as Array<string>;
 
-  constructor(private activatedRoute: ActivatedRoute) {}
+  constructor(private activatedRoute: ActivatedRoute) {
+    console.log('++ activatedRoute', this.activatedRoute);
+  }
 
   ngOnInit(): void {}
 }
