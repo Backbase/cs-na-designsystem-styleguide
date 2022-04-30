@@ -42,10 +42,7 @@ const routes: Routes = [
       },
       {
         path: 'my-accounts',
-        loadChildren: () =>
-          import('./journeys/accounts/accounts-transactions-wrapper/wrapper-accounts-transactions-journey.module').then(
-            (m) => m.AccountsTransactionsJourneyBundleModule,
-          ),
+        loadChildren: () => import('@backbase/designsystem/styleguide').then((m) => m.StyleguideModule),
         data: {
           title: $localize`:@@accounts.nav.item.title:My accounts - Retail Banking`,
           entitlements: PERMISSIONS.canViewMyAccounts,

@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "designsystem-styleguide": "libs/designsystem/styleguide",
     "retail-assets": "libs/retail/assets",
     "retail-communication": "libs/retail/feature/communication",
     "retail-layout": "libs/retail/feature/layout",
