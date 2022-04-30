@@ -12,9 +12,7 @@ export class StyleguideComponent implements OnInit {
     .map((route: Route) => route.path)
     .sort() as Array<string>;
 
-  constructor(private activatedRoute: ActivatedRoute) {
-    console.log('++ activatedRoute', this.activatedRoute);
-  }
+  constructor(private activatedRoute: ActivatedRoute) {}
 
   ngOnInit(): void {}
 }
